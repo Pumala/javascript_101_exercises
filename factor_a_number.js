@@ -2,20 +2,36 @@
 
 function factors(num) {
   var arr = [];
-  var half = Math.floor(num);
-  for(var i = 1; i <= half; i++) {
-    var num1 = num / i;
-    var num2 = num / num1
-    if ((Math.floor(num1) * Math.floor(num2)) === num) {
-      arr.push(num1);
-      arr.push(num2);
-      half = Math.floor(num1 / 2);
+  var new_num = Math.floor(Math.sqrt(num));
+  while (new_num >= 1) {
+    if (num % new_num === 0) {
+      arr.push(new_num);
+      var new_num2 = num / new_num;
+      arr.push(new_num2);
     }
+    new_num -= 1;
   }
   return arr;
 }
 
 console.log(factors(24));
+
+// function factors(num) {
+//   var arr = [];
+//   var half = Math.floor(num);
+//   for(var i = 1; i <= half; i++) {
+//     var num1 = num / i;
+//     var num2 = num / num1
+//     if ((Math.floor(num1) * Math.floor(num2)) === num) {
+//       arr.push(num1);
+//       arr.push(num2);
+//       half = Math.floor(num1 / 2);
+//     }
+//   }
+//   return arr;
+// }
+//
+// console.log(factors(24));
 
 // function factors(num) {
 //   var arr = [];
