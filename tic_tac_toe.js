@@ -1,21 +1,31 @@
 function ticTacToe(board) {
-  for(var i = 0; i < board.length; i++) {
-    for(var j = 0; j < board.length; j++) {
-      if ((board[i][0] === board[i][1]) &&
-        (board[i][1] === board[i][2]) &&
-        (board[i][2] !== null)) {
-          return "3 in a Row: " + board[i][0];
-      } else if ((board[0][i] === board[1][i]) &&
-        (board[1][i] === board[2][i]) &&
-        (board[2][i] !== null)) {
-        return "3 in a Row: " + board[1][i];
-      }
+  for(var i = 0; i < 2; i++) {
+    if ((board[i][0] === board[i][1]) &&
+      (board[i][1] === board[i][2]) &&
+      (board[i][2] !== null)) {
+        return "3 in a Row: " + board[i][0];
+    } else if ((board[0][i] === board[1][i]) &&
+      (board[1][i] === board[2][i]) &&
+      (board[2][i] !== null)) {
+      return "3 in a Row: " + board[1][i];
+    } else if ((board[i][0] === board[i + 1][1]) &&
+    (board[i][0] === board[i + 2][2]) &&
+    (board[i][0] !== null)) {
+      return "3 in a Row: " + board[i][0];
+    } else if ((board[i][2] === board[i + 1][1]) &&
+    (board[i][2] === board[i + 2][0]) &&
+    (board[i][2] !== null)) {
+      return "3 in a Row: " + board[i][2];
     }
   }
   return null;
 }
 
-console.log(ticTacToe([['X', 'O', 'X'], [null, 'X', 'X'], ['O', 'X', 'X']]));
+console.log(ticTacToe([
+  ['X', 'O', 'X'],
+  [null, 'X', 'X'],
+  ['O', 'X', 'X']
+]));
 console.log(ticTacToe([
   ['O', 'O', 'O'],
   ['X', null, 'X'],
@@ -31,6 +41,48 @@ console.log(ticTacToe([
   ['O', 'O', null],
   [null, 'X', 'X']
 ]));
+console.log(ticTacToe([
+  ['O', 'X', 'O'],
+  [null, 'O', null],
+  ['O', 'X', 'X']
+]));
+
+// function ticTacToe(board) {
+//   for(var i = 0; i < board.length; i++) {
+//     for(var j = 0; j < board.length; j++) {
+//       if ((board[i][0] === board[i][1]) &&
+//         (board[i][1] === board[i][2]) &&
+//         (board[i][2] !== null)) {
+//           return "3 in a Row: " + board[i][0];
+//       } else if ((board[0][i] === board[1][i]) &&
+//         (board[1][i] === board[2][i]) &&
+//         (board[2][i] !== null)) {
+//         return "3 in a Row: " + board[1][i];
+//       } else if ((board[i][0] === board[i + 1][1]) &&
+//       (board[i][0] === board[i + 2][2]) &&
+//       (board[i][0] !== null)) {
+//         return "3 in a Row: " + board[i][0];
+//       } else if ((board[i][2] === board[i + 1][1]) &&
+//       (board[i][2] === board[i + 2][0]) &&
+//       (board[i][2] !== null)) {
+//         return "3 in a Row: " + board[i][2];
+//       }
+//     }
+//   }
+//   return null;
+// }
+
+
+
+// ((board[i][0] === board[i + 1][1]) &&
+// (board[i][0] === board[i + 2][2]) &&
+// (board[i][0] !== null))
+
+// ((board[i][2] === board[i + 1][1]) &&
+// (board[i][2] === board[i + 2][0]) &&
+// (board[i][2] !== null))
+
+
 
 
 // function ticTacToe(board) {

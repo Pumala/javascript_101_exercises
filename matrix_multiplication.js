@@ -1,4 +1,4 @@
-function matrixAdd(matrix_1, matrix_2) {
+function matrixMultiply(matrix_1, matrix_2) {
   var matrix_3 = [[],[]];
   console.log(matrix_1.length);
   for(var i = 0; i < matrix_1.length; i++) {
@@ -9,8 +9,8 @@ function matrixAdd(matrix_1, matrix_2) {
   return matrix_3;
 }
 
-console.log(matrixAdd([[2, -2], [5, 3]], [[-1, 4], [7, -6]]));
-console.log(matrixAdd([[2, 4], [3, 4]], [[5, 2], [3, 1]]));
+console.log(matrixMultiply([[2, -2], [5, 3]], [[-1, 4], [7, -6]]));
+console.log(matrixMultiply([[2, 4], [3, 4]], [[5, 2], [3, 1]]));
 
 
 // matrix_3[i][j] = (matrix_1[i][0] * matrix_2[0][j]) + (matrix_1[i][1] * matrix_2[1][j]);
