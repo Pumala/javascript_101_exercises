@@ -1,3 +1,7 @@
+// writes a function that takes in 3 parameters (bill, level of service, and
+// number of ppl eating together). Then based on the level of service and number of people,
+// returns the amount each person should pay from the total bill (tip included based on service)
+
 function splitAmount(bill, service, numPeople) {
   if (service === "good") {
     return ((bill * .2) + bill) / numPeople;

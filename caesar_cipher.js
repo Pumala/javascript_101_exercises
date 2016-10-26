@@ -2,11 +2,13 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 function cipher(phrase, offset) {
-  new_phrase = "";
+  var new_phrase = "";
+  var is_NegIndex = "";
+  var neg_index = "";
   for(var i = 0; i < phrase.length; i++) {
-    letter = phrase[i].toLowerCase();
-    index = alphabet.indexOf(letter);
-    new_index = index + offset;
+    var letter = phrase[i].toLowerCase();
+    var index = alphabet.indexOf(letter);
+    var new_index = index + offset;
     if (new_index > 25) {
       is_NegIndex = true;
       neg_index = new_index - 26;

@@ -1,7 +1,11 @@
+// write a function that takes in two values (ciphered text and an offset (the
+// number by which it deviated from the orignal order)). Then determines and returns
+// the original text deciphered into plain English
+
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-function cipher(phrase, offset) {
+function decipher(phrase, offset) {
   var new_phrase = "";
   var is_NegIndex = "";
   var neg_index = "";
@@ -26,4 +30,4 @@ function cipher(phrase, offset) {
   return new_phrase;
 }
 
-console.log(cipher("Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar", 13));
+console.log(decipher("Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar", 13));

@@ -1,6 +1,9 @@
+// write a function that takes in a slogan and prints out that slogan in a
+// banner that fits nicely around it
+
 function printBanner(slogan) {
   var length = slogan.length;
-  row = "*".repeat(length + 4);
+  var row = "*".repeat(length + 4);
   console.log(row);
   console.log("* " + slogan + " *");
   console.log(row);

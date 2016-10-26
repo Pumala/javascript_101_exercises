@@ -1,6 +1,8 @@
+// write a function that adds 3 extra vowels to every two vowels in a row
+
 function longLongVowels(phrase) {
-  counter = 0;
-  new_phrase = "";
+  var counter = 0;
+  var new_phrase = "";
   for(var i = 0; i < phrase.length; i++) {
     if (phrase[i] == "o" || phrase[i] == "e") {
       counter ++;
@@ -16,4 +18,4 @@ function longLongVowels(phrase) {
   return new_phrase;
 }
 
-console.log(longLongVowels('Goo'));
+console.log(longLongVowels('Goolee'));

@@ -1,3 +1,6 @@
+// write a function that takes in two paremeters (bill and level of service).
+// based on those two parameters, the function returns the tip amount
+
 function tipAmount(bill, service) {
   if (service === "good") {
     return bill * .2;

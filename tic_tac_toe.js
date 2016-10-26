@@ -1,3 +1,8 @@
+// write a function that takes in a 2 three by three dimensional array of values
+// either ('X', 'O', or null). Then the function checks if there is any 3 in a row
+// combination of either the 'X' or the 'O'. If so, it returns the value of the
+// winning combination. Else, if there's no 3 in a row of either 'X' or 'O', it returns null
+
 function ticTacToe(board) {
   for(var i = 0; i < 2; i++) {
     if ((board[i][0] === board[i][1]) &&

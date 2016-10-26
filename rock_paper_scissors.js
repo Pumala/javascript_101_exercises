@@ -1,3 +1,8 @@
+// write a function that takes in two arguments ('rock', 'paper', or 'scissors').
+// the first value is player one's choice
+// the second value is player two's choice
+// the function determines the winner from these choices and returns who won the match
+
 function rockPaperScissors(throw1, throw2) {
   if (throw1 === throw2) {
     return "It's a tie!";

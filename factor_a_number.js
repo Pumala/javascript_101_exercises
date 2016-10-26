@@ -1,3 +1,5 @@
+// write a function that takes in a number and returns an array of all its factors
+
 function factors(num) {
   var arr = [];
   var half = Math.floor(num);

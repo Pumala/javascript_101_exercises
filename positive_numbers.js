@@ -1,5 +1,9 @@
+//  write a function that takes in an array of numbers as its parameter
+// then return a new array only consisting the positive numbers from the
+// array of numbers that was passed in
+
 function positiveNumbers(arr) {
-  new_arr = [];
+  var new_arr = [];
   for(var i = 0; i < arr.length; i++) {
     if (arr[i] >= 0) {
       new_arr.push(arr[i]);

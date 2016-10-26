@@ -1,3 +1,6 @@
+// write a function that takes in 2 two-dimensional matrices and returns the sum
+// of the two matrices in a new matrix 
+
 function matrixAdd(matrix_1, matrix_2) {
   matrix_3 = [[],[]];
   for(var i = 0; i < matrix_1.length; i++) {

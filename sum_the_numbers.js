@@ -1,5 +1,8 @@
+// write a function that takes in an array of numbers and returns the sum of the
+// numbers in the array
+
 function sumNumbers(arr) {
-  sum = 0;
+  var sum = 0;
   for (var i = 0; i < arr.length; i++) {
     sum += arr[i];
   }

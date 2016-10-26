@@ -1,7 +1,9 @@
+// write a function that takes in a parameter and returns it in 'Leetspeak' code
+
 function leetspeak(phrase) {
-  new_phrase = "";
+  var new_phrase = "";
   for(var i = 0; i < phrase.length; i++) {
-    letter = phrase[i].toUpperCase();
+    var letter = phrase[i].toUpperCase();
     if (letter === "A") {
       new_phrase += "4";
     } else if (letter === "E") {

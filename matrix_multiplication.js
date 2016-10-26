@@ -1,3 +1,6 @@
+// write a function that takes in 2 two-dimensional matrices and returns the
+// mulitiplication result of them in a new two-dimensional matrix
+
 function matrixMultiply(matrix_1, matrix_2) {
   var matrix_3 = [[],[]];
   console.log(matrix_1.length);
