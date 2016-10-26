@@ -1,22 +1,59 @@
 function factors(num) {
   var arr = [];
   var half = Math.floor(num);
-  arr.push(1);
-  for(var i = 2; i <= half; i++) {
-    num1 = num / i;
-    num2 = num / num1
+  for(var i = 1; i <= half; i++) {
+    var num1 = num / i;
+    var num2 = num / num1
     if ((Math.floor(num1) * Math.floor(num2)) === num) {
       arr.push(i);
+      half = Math.floor(num1);
+      arr.push(half);
+      half--;
     }
   }
   return arr;
 }
 
+console.log(factors(24));
+
+// function factors(num) {
+//   var arr = [];
+//   var half = Math.floor(num);
+//   arr.push(1);
+//   for(var i = 2; i <= half; i++) {
+//     var num1 = num / i;
+//     var num2 = num / num1
+//     if ((Math.floor(num1) * Math.floor(num2)) === num) {
+//       arr.push(i);
+//       half = Math.floor(num1);
+//       arr.push(half);
+//       half--;
+//     }
+//   }
+//   return arr;
+// }
+//
+// console.log(factors(12));
+
+// function factors(num) {
+//   var arr = [];
+//   var half = Math.floor(num);
+//   arr.push(1);
+//   for(var i = 2; i <= half; i++) {
+//     var num1 = num / i;
+//     var num2 = num / num1
+//     if ((Math.floor(num1) * Math.floor(num2)) === num) {
+//       arr.push(i);
+//       half = Math.floor(num2);
+//     }
+//   }
+//   return arr;
+// }
+//
+// console.log(factors(27));
 //
 // 15 / 3 = 5
 // 15 / 5 = 3
-
-console.log(factors(27));
 
 
 // function factors(num) {
