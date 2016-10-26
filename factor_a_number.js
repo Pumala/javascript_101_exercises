@@ -7,16 +7,33 @@ function factors(num) {
     var num1 = num / i;
     var num2 = num / num1
     if ((Math.floor(num1) * Math.floor(num2)) === num) {
-      arr.push(i);
-      half = Math.floor(num1);
-      arr.push(half);
-      half--;
+      arr.push(num1);
+      arr.push(num2);
+      half = Math.floor(num1 / 2);
     }
   }
   return arr;
 }
 
 console.log(factors(24));
+
+// function factors(num) {
+//   var arr = [];
+//   var half = Math.floor(num);
+//   for(var i = 1; i <= half; i++) {
+//     var num1 = num / i;
+//     var num2 = num / num1
+//     if ((Math.floor(num1) * Math.floor(num2)) === num) {
+//       arr.push(i);
+//       half = Math.floor(num1);
+//       arr.push(half);
+//       half--;
+//     }
+//   }
+//   return arr;
+// }
+//
+// console.log(factors(24));
 
 // function factors(num) {
 //   var arr = [];
