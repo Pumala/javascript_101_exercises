@@ -2,7 +2,8 @@
 
 function leetspeak(phrase) {
   var new_phrase = "";
-  for(var i = 0; i < phrase.length; i++) {
+  var length = phrase.length;
+  for(var i = 0; i < length; i++) {
     var letter = phrase[i].toUpperCase();
     var code = {
         'A': '4',
